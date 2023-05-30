@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ideation Page</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'ss.css' %}">
+</head>
+
+<body>
+  <header>
+    <img src="{% static 'company_logo.png' %} " alt="Company Logo">
+    <h1>Innovate & Elevate: Share Your Ideas for Company Growth</h1>
+    <h2>Together, let's shape the future of our company!</h2>
+  </header>
+
+  <section class="container">
+    <h2>Welcome to the Ideation Page</h2>
+    <p>We encourage all employees to contribute their valuable ideas and suggestions for the betterment of our company.
+      Your innovative thinking and unique perspectives can drive positive change and propel us towards greater success.
+      This platform is dedicated to fostering a collaborative environment and empowering each individual to contribute
+      towards our collective growth. Let's make a difference together!</p>
+
+    <form id="ideaForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="department">Department:</label>
+      <select id="department" required><br><br>
+        <option value="">Select Department</option>
+        <option value="department1">Marketing / Business Development</option>
+        <option value="department2">Growth Manager </option>
+        <option value="department3">Product Manager</option>
+        <option value="department3">Market Analyst </option>
+        <option value="department3">Campus Manager </option>
+        <option value="department3">Community Managers </option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <label for="ideaTitle">Title/Summary of the Idea:</label>
+      <input type="text" id="ideaTitle" required><br><br>
+
+      <label for="description">Description:</label>
+      <textarea id="description" required></textarea><br><br>
+
+      <label for="benefits">Potential Benefits:</label>
+      <textarea id="benefits" required></textarea><br><br>
+
+      <label for="implementationPlan">Implementation Plan:</label>
+      <textarea id="implementationPlan" required></textarea><br><br>
+
+      <label for="attachments">Attachments (Optional):</label>
+      <input type="file" id="attachments"><br><br>
+
+      <button type="submit">Submit Idea</button>
+    </form>
+  </section>
+
+  <section class="container">
+    <h2>Idea Discussion Forum</h2>
+    <div id="discussion"></div>
+  </section>
+
+  <footer>
+    <h2>Address</h2>
+    <p>Contact Information: Email:hello@talentserve.org| Phone: +91 8605886699</p>
+    <p>Company Address: C-103, 1st Floor, Shree Sai Tower CHSL Sodawala Lane, Near Sterling Hospital, Borivali W,
+      Borivali West, Mumbai, Maharashtra 400092</p>
+    <div class="social-media">
+      <a href="https://m.facebook.com/talentserve/" target="_blank"><img src="{% static 'fb_logo.png' %} "
+          alt="Facebook"></a>
+      <a href="https://twitter.com/talentserve" target="_blank"><img src="{% static 'twitter_logo.png' %}"
+          alt="Twitter"></a>
+      <a href="https://in.linkedin.com/company/talentserve-india-pvt-ltd" target="_blank"><img
+          src="{% static 'linkdine_logo.png' %}" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="{% static 'script.js' %} "></script>
+</body>
+
+</html>
